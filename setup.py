@@ -6,7 +6,7 @@ with open("README.md") as readme_file:
 
 setup(
     name='opencdms_test_databases',
-    version='version='0.1.3',
+    version='version='version='0.1.3'',
     description='OpenCDMS test databases',
     license="MIT license",
     long_description=readme + "\n",
