@@ -1,26 +1,16 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
-
-with open("requirements.txt") as requirements_file:
-    requirements = requirements_file.readlines()
+from setuptools import setup
 
 setup(
-    name='opencdms_test_data',
+    name='opencdms_test_databases',
     version='0.1.0',
-    description='OpenCDMS test data as package.',
-    entry_points={
-        "console_scripts": [
-            "opencdms-test-data=opencdms_test_data.cli:main",
-        ],
-    },
-    install_requires=requirements,
+    description='OpenCDMS test databases',
     author='OpenCDMS',
     author_email='info@opencdms.org',
-    url='https://github.com/opencdms/opencdms-test-data',
-    packages=find_packages(include=["opencdms_test_data", "opencdms_test_data.*"]),
+    maintainer='Ian Edwards',
+    maintainer_email='info@opencdms.org',
+    url='https://github.com/opencdms/opencdms-test-databases',
+    packages='opencdms_test_databases',
     include_package_data=True,
     zip_safe=False,
-    package_data={'opencdms_test_data': ["*.yml"]},
-    
 )
-
