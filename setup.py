@@ -10,6 +10,7 @@ setup(
     description='OpenCDMS test databases',
     license="MIT license",
     long_description=readme + "\n",
+    long_description_content_type='text/markdown',
     author='OpenCDMS',
     author_email='info@opencdms.org',
     maintainer='Ian Edwards',
